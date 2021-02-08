@@ -4,4 +4,4 @@ create a crack function that will decode the cipher so that an encrypted message
 
 Create an encrypt function that takes in a plain text phrase and a numeric shift.
 
-https://github.com/samuelclark907/ceaser-cipher/compare/ceaser-cipher?expand=1
+https://github.com/samuelclark907/ceaser-cipher/pull/1
