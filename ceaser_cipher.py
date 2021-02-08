@@ -35,11 +35,15 @@ def crack(encoded):
         split_data = encoded_data.split()
         crack_list.append(split_data)
         # crack_list.append(e)
-    for i in crack_list:
+    for i in range(len(crack_list)) :
         # print(i)
-        current = i
-        for j in i:
-            print(j)
+        current = crack_list[i]
+        # print((current, "END OF I"))
+        for j in current:
+            if j in word_list:
+                hacked += j
+            # print((j, "THE END"))
+    print(hacked)
             
             # print(j)
         # for j in i:
@@ -61,7 +65,7 @@ def crack(encoded):
 if __name__ == "__main__":
     text = "It was the best of times, it was the worst of times."
     enc = encrypt(text, 5)
-    decrypt(enc, 5)
-    crack(enc)
+    # decrypt(enc, 5)
+    # crack(enc)
 
     
